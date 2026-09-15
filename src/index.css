@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+.light-theme {
+  --color-slate-950: #ffffff;
+  --color-slate-900: #f8fafc; /* Map dark slate to light slate */
+  --color-slate-800: #f1f5f9;
+  --color-slate-700: #e2e8f0;
+  --color-slate-600: #cbd5e1;
+  --color-slate-500: #94a3b8;
+  --color-slate-400: #64748b;
+  --color-slate-300: #475569;
+  --color-slate-200: #334155;
+  --color-slate-100: #1e293b;
+  --color-slate-50:  #0f172a;
+  
+  --color-white: #0f172a; /* Map white text to dark text */
+  --color-black: #ffffff; /* Map black to white */
+}
+
+@keyframes sonarWave {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes beaconGlow {
+  0%, 100% {
+    box-shadow: 0 0 35px rgba(244, 63, 94, 0.7), inset 0 0 25px rgba(225, 29, 72, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 80px rgba(244, 63, 94, 0.95), inset 0 0 45px rgba(225, 29, 72, 0.8);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes perimeterStrobe {
+  0%, 100% {
+    box-shadow: inset 0 0 50px rgba(225, 29, 72, 0.35);
+  }
+  50% {
+    box-shadow: inset 0 0 110px rgba(225, 29, 72, 0.75);
+  }
+}
+
+.animate-sonar-1 {
+  animation: sonarWave 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-sonar-2 {
+  animation: sonarWave 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite 0.9s;
+}
+
+.animate-sonar-3 {
+  animation: sonarWave 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite 1.8s;
+}
+
+.animate-beacon-glow {
+  animation: beaconGlow 2s ease-in-out infinite;
+}
+
+.animate-perimeter-strobe {
+  animation: perimeterStrobe 1.8s ease-in-out infinite;
+}
+

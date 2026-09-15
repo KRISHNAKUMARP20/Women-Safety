@@ -1,0 +1,175 @@
+[
+  {
+    "id": "user-admin-1",
+    "name": "System Admin",
+    "email": "kk6308608@gmail.com",
+    "phone": "+91-00000-00000",
+    "role": "admin",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+    "createdAt": "2026-06-17T15:55:17.044Z"
+  },
+  {
+    "id": "user-1789487863390",
+    "name": "Hshs",
+    "email": "kk5532227838@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Primary Guardian",
+        "phone": "+916381112606",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T15:57:43.390Z"
+  },
+  {
+    "id": "user-1789488938093",
+    "name": "Madhu",
+    "email": "madhu78@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Primary Guardian",
+        "phone": "+916381112606",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T16:15:38.093Z"
+  },
+  {
+    "id": "user-1789489741507",
+    "name": "Khh",
+    "email": "kk63086@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Primary Guardian",
+        "phone": "+91-98765-11223",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T16:29:01.507Z"
+  },
+  {
+    "id": "user-1789489844393",
+    "name": "jj",
+    "email": "kk6308@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "father",
+        "phone": "8866162229",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T16:30:44.393Z"
+  },
+  {
+    "id": "user-1789491254706",
+    "name": "gj",
+    "email": "kk08608@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "kkk",
+        "phone": "8866162229",
+        "email": "kk6308608@gmail.com",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T16:54:14.707Z"
+  },
+  {
+    "id": "user-1789491351670",
+    "name": "Gshah",
+    "email": "kk68608@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Kkk",
+        "phone": "886616229",
+        "email": "kk6308608@gmail.com",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T16:55:51.670Z"
+  },
+  {
+    "id": "user-1789491771000",
+    "name": "Hshs",
+    "email": "krishnmar6381amma@gmail.com",
+    "phone": "8866162229",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Kkkkk",
+        "phone": "8866162229",
+        "email": "kk6308608@gmail.com",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T17:02:51.000Z"
+  },
+  {
+    "id": "user-1789491869790",
+    "name": "Jahah",
+    "email": "krishnakumar63ma@gmail.com",
+    "phone": "9150703788",
+    "role": "girl",
+    "bloodGroup": "O+",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "emergencyContacts": [
+      {
+        "id": "c-primary",
+        "name": "Ammma",
+        "phone": "9150703788",
+        "email": "hackerkrishna6381@gmail.com",
+        "relation": "Parent",
+        "isPrimary": true
+      }
+    ],
+    "safeZones": [],
+    "createdAt": "2026-09-15T17:04:29.791Z"
+  }
+]

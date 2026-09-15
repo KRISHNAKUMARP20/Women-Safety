@@ -1,0 +1,10 @@
+{
+  "name": "Girls Safety System",
+  "description": "Real-time emergency SOS, live location tracking, nearest police auto-dispatch, and multi-role dashboard for girls, parents, police, and admins.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
