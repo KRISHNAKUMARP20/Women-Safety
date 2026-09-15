@@ -12,7 +12,7 @@ export const emergencyService = {
     isSilent?: boolean;
     medicalInfo?: string;
   }): Promise<Emergency> {
-    const res = await fetch('/api/emergencies/sos', {
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/emergencies/sos`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(params),
@@ -23,13 +23,13 @@ export const emergencyService = {
   },
 
   async getActiveEmergencies(): Promise<Emergency[]> {
-    const res = await fetch('/api/emergencies/active');
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/emergencies/active`);
     const data = await res.json();
     return data.emergencies || [];
   },
 
   async getAllEmergencies(): Promise<Emergency[]> {
-    const res = await fetch('/api/emergencies');
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/emergencies`);
     const data = await res.json();
     return data.emergencies || [];
   },

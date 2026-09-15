@@ -36,7 +36,7 @@ export const SystemStatusLogs: React.FC<SystemStatusLogsProps> = ({
   const fetchLogs = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch('/api/admin/audit-logs');
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/audit-logs`);
       const data = await res.json();
       if (data.logs) {
         setLogs(data.logs);

@@ -2,13 +2,13 @@ import { PoliceStation } from '../types';
 
 export const policeService = {
   async getStations(): Promise<PoliceStation[]> {
-    const res = await fetch('/api/police/stations');
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`);
     const data = await res.json();
     return data.stations || [];
   },
 
   async registerStation(station: Omit<PoliceStation, 'id'>): Promise<PoliceStation> {
-    const res = await fetch('/api/police/stations', {
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(station),

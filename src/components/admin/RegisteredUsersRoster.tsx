@@ -30,7 +30,7 @@ export const RegisteredUsersRoster: React.FC<RegisteredUsersRosterProps> = () =>
   const fetchUsers = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch('/api/admin/users');
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/users`);
       const data = await res.json();
       if (data.users && Array.isArray(data.users)) {
         setUsers(data.users);

@@ -49,7 +49,7 @@ export const AdminDashboard: React.FC = () => {
 
   const fetchStats = async () => {
     try {
-      const res = await fetch('/api/admin/stats');
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/stats`);
       const data = await res.json();
       if (data.stats) setStats(data.stats);
     } catch (e) {
@@ -59,7 +59,7 @@ export const AdminDashboard: React.FC = () => {
 
   const fetchStations = async () => {
     try {
-      const res = await fetch('/api/police/stations');
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`);
       const data = await res.json();
       if (data.stations) setPoliceStations(data.stations);
     } catch (e) {
@@ -78,7 +78,7 @@ export const AdminDashboard: React.FC = () => {
     }
     try {
       setIsResetting(true);
-      const res = await fetch('/api/admin/reset', { method: 'POST' });
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/reset`, { method: 'POST' });
       await res.json();
       await refreshEmergencies();
       await fetchStats();
@@ -97,7 +97,7 @@ export const AdminDashboard: React.FC = () => {
     if (!stationName.trim()) return;
 
     try {
-      await fetch('/api/admin/stations', {
+      await fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/stations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

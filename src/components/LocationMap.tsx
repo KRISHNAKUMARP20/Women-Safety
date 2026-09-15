@@ -35,7 +35,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
 
   // Fetch police stations
   useEffect(() => {
-    fetch('/api/police/stations')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`)
       .then((r) => r.json())
       .then((d) => {
         if (d.stations) setStations(d.stations);

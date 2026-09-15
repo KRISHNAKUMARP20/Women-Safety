@@ -4,6 +4,7 @@ import { createServer as createViteServer } from 'vite';
 import apiRouter from './server/routes/api';
 import { errorHandler } from './server/middleware/errorHandler';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ async function startServer() {
   const PORT = 3000;
 
   // Middleware
+  app.use(cors({ origin: '*' }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 

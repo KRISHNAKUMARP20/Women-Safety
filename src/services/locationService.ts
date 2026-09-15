@@ -160,7 +160,7 @@ class LocationService {
   // Sync with backend API
   public async syncWithBackend(userId: string, coords: LocationCoords) {
     try {
-      await fetch('/api/locations/sync', {
+      await fetch(`${import.meta.env.VITE_API_URL || ''}/api/locations/sync`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -2,7 +2,7 @@ import { NotificationAlert } from '../types';
 
 export const notificationService = {
   async getNotifications(): Promise<NotificationAlert[]> {
-    const res = await fetch('/api/notifications');
+    const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/notifications`);
     const data = await res.json();
     return data.notifications || [];
   },
@@ -14,7 +14,7 @@ export const notificationService = {
   },
 
   async sendBroadcast(message: string, type: 'info' | 'warning' | 'emergency'): Promise<void> {
-    await fetch('/api/notifications/broadcast', {
+    await fetch(`${import.meta.env.VITE_API_URL || ''}/api/notifications/broadcast`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message, type, timestamp: new Date().toISOString() }),

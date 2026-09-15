@@ -10,7 +10,7 @@ export const UsersManagement: React.FC = () => {
   const [roleFilter, setRoleFilter] = useState<'all' | UserRole>('all');
 
   useEffect(() => {
-    fetch('/api/admin/users')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/users`)
       .then((r) => r.json())
       .then((d) => {
         if (d.users) setUsers(d.users);

@@ -17,7 +17,7 @@ class SocketEventService {
     }
 
     try {
-      this.eventSource = new EventSource('/api/events');
+      this.eventSource = new EventSource(`${import.meta.env.VITE_API_URL || ''}/api/events`);
 
       this.eventSource.onopen = () => {
         this.isConnected = true;

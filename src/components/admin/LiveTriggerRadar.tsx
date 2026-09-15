@@ -85,7 +85,7 @@ export const LiveTriggerRadar: React.FC<LiveTriggerRadarProps> = ({
       const lat = 12.9716 + (Math.random() * 0.016 - 0.008);
       const lng = 77.5946 + (Math.random() * 0.016 - 0.008);
 
-      const res = await fetch('/api/emergencies/sos', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/emergencies/sos`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

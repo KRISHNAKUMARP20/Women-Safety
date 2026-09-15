@@ -8,7 +8,7 @@ export const Reports: React.FC = () => {
   const [logs, setLogs] = useState<SystemAuditLog[]>([]);
 
   useEffect(() => {
-    fetch('/api/admin/logs')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/admin/logs`)
       .then((r) => r.json())
       .then((d) => {
         if (d.logs) setLogs(d.logs);

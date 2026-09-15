@@ -28,7 +28,7 @@ export const PoliceDashboard: React.FC<PoliceDashboardProps> = ({ onSelectEmerge
   const [filterStatus, setFilterStatus] = useState<'all' | 'active' | 'assigned' | 'resolved'>('all');
 
   useEffect(() => {
-    fetch('/api/police/stations')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`)
       .then((r) => r.json())
       .then((d) => {
         if (d.stations) setStations(d.stations);

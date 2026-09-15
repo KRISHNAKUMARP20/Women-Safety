@@ -8,7 +8,7 @@ export const EmergencyAlerts: React.FC = () => {
   const [alerts, setAlerts] = useState<NotificationAlert[]>([]);
 
   useEffect(() => {
-    fetch('/api/parents/alerts')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/parents/alerts`)
       .then((r) => r.json())
       .then((d) => {
         if (d.alerts) setAlerts(d.alerts);

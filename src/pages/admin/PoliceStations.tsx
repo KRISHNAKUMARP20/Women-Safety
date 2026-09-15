@@ -18,7 +18,7 @@ export const PoliceStations: React.FC = () => {
   });
 
   useEffect(() => {
-    fetch('/api/police/stations')
+    fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`)
       .then((r) => r.json())
       .then((d) => {
         if (d.stations) setStations(d.stations);
@@ -30,7 +30,7 @@ export const PoliceStations: React.FC = () => {
     e.preventDefault();
     if (!newStation.name) return;
     try {
-      const res = await fetch('/api/police/stations', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/police/stations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newStation),
